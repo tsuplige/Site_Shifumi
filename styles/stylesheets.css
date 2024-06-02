@@ -47,4 +47,40 @@ header .score h1 {
 header .score p {
   color: hsl(229, 25%, 31%);
   font-size: 80px;
+}
+
+main {
+  background-image: url("/images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+main .button_border {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  box-shadow: inset 10px -10px 0px 5px rgba(0, 0, 0, 0.385);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .paper_button_border {
+  background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+main .rock_button_border {
+  background: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+main .scissors_button_border {
+  background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+main .play_button {
+  width: 120px;
+  height: 120px;
+  box-shadow: inset -10px 10px 0px 5px rgba(0, 0, 0, 0.262);
+  border-radius: 100px;
+  border: none;
 }/*# sourceMappingURL=stylesheets.css.map */

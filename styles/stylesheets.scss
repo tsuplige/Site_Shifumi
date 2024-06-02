@@ -74,3 +74,45 @@ header {
         }
     }
 }
+
+main {
+
+    background-image: url("/images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 400px;
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .button_border {
+        width: 150px;
+        height: 150px;
+
+        border-radius: 100px;
+        box-shadow: inset 10px -10px 0px 5px rgba(0, 0, 0, 0.385);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paper_button_border {
+        background: linear-gradient($paper-gradient);
+    }
+    .rock_button_border {
+        background: linear-gradient($rock-gradient);
+    }
+    .scissors_button_border {
+        background: linear-gradient($scissors-gradient);
+    }
+    .play_button {
+        width: 120px;
+        height: 120px;
+
+        box-shadow: inset -10px 10px 0px 5px rgba(0, 0, 0, 0.262);
+        border-radius: 100px;
+        border: none;
+    }
+}
