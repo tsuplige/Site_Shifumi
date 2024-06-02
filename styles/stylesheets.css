@@ -81,7 +81,7 @@ main .button_border:hover {
   width: 160px;
   height: 160px;
 }
-main .button_border:hover .play_button:hover {
+main .button_border:hover .play_button {
   width: 125px;
   height: 125px;
 }
@@ -123,6 +123,12 @@ main .play_button {
   align-items: center;
   justify-content: space-around;
 }
+.modal_container .modal #close {
+  cursor: pointer;
+}
+.modal_container .modal #close:hover {
+  width: 24px;
+}
 .modal_container .modal .modal_rule_img {
   width: 350px;
   width: 350px;
@@ -151,6 +157,7 @@ footer .rules_button {
   font-size: 20px;
   border: solid 1px white;
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: center;
   align-items: center;
