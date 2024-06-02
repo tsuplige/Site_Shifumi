@@ -53,11 +53,19 @@ main {
   background-image: url("/images/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 400px;
+  width: 500px;
   height: 400px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+main .row1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 main .button_border {
   width: 150px;
@@ -83,4 +91,13 @@ main .play_button {
   box-shadow: inset -10px 10px 0px 5px rgba(0, 0, 0, 0.262);
   border-radius: 100px;
   border: none;
+}
+
+footer .modal {
+  background-color: white;
+  width: 500px;
+  height: 550px;
+  position: fixed;
+  right: 40%;
+  top: 40%;
 }/*# sourceMappingURL=stylesheets.css.map */
