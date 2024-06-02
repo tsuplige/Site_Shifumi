@@ -75,6 +75,15 @@ main .button_border {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+main .button_border:hover {
+  width: 160px;
+  height: 160px;
+}
+main .button_border:hover .play_button:hover {
+  width: 125px;
+  height: 125px;
 }
 main .paper_button_border {
   background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
@@ -91,6 +100,7 @@ main .play_button {
   box-shadow: inset -10px 10px 0px 5px rgba(0, 0, 0, 0.262);
   border-radius: 100px;
   border: none;
+  cursor: pointer;
 }
 
 .modal_container {
@@ -98,13 +108,12 @@ main .play_button {
   height: 100%;
   position: fixed;
   z-index: 77;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.421);
 }
-
-.modal {
+.modal_container .modal {
   background-color: white;
   width: 400px;
   height: 400px;
@@ -114,18 +123,40 @@ main .play_button {
   align-items: center;
   justify-content: space-around;
 }
-.modal .modal_rule_img {
+.modal_container .modal .modal_rule_img {
   width: 350px;
   width: 350px;
 }
-.modal .modal_header {
+.modal_container .modal .modal_header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 80%;
   padding: 15px 15px;
 }
-.modal .modal_header p {
+.modal_container .modal .modal_header p {
   font-size: 20px;
   font-weight: 700;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+footer .rules_button {
+  width: 8%;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  border: solid 1px white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+footer .rules_button:hover {
+  border-color: rgb(155, 155, 155);
+  color: rgb(155, 155, 155);
 }/*# sourceMappingURL=stylesheets.css.map */
