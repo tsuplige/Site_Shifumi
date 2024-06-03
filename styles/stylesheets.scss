@@ -131,7 +131,7 @@ main {
     width: 500px;
     height: 400px;
 
-    display: none;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -157,6 +157,7 @@ main {
 
 .duel {
 
+    display: none;
     .choice_container {
         height: 200px;
         color: white;

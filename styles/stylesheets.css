@@ -92,7 +92,7 @@ main .play_button {
   background-position: center;
   width: 500px;
   height: 400px;
-  display: none;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -113,6 +113,9 @@ main .play_button {
   height: 125px;
 }
 
+.duel {
+  display: none;
+}
 .duel .choice_container {
   height: 200px;
   color: white;

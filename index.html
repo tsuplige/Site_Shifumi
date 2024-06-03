@@ -45,7 +45,7 @@
         <p class="score_result">0</p>
       </div>
     </header>
-    <main class="choice">
+    <main id="choice" class="choice">
       <div class="row1">
         <div onclick="MakeChoice('paper')" class="paper_button_border button_border">
           <button class="play_button ">
@@ -66,7 +66,7 @@
           </button>
         </div>
       </div>
-      <div onclick="MakeChoice('rock')" class="rock_button_border button_border">
+      <div onclick='MakeChoice(1)' class="rock_button_border button_border">
         <button class="play_button">
           <img
             src="/images/icon-rock.svg"
@@ -76,19 +76,12 @@
         </button>
       </div>
     </main>
-    <main class="duel">
+    <main id="duel" class="duel">
       <div class="choice_container">
         <h2>YOU PICKED</h2>
         <div id="player">
-          <div class="rock_button_border button_border">
-            <button class="play_button">
-              <img
-                src="/images/icon-rock.svg"
-                alt="bouton pierre"
-                class="play_button_img"
-              />
-            </button>
-          </div>
+          <!-- <div class="empty">
+          </div> -->
         </div>
        
       </div>
