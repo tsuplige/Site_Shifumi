@@ -9,7 +9,18 @@ function ModalDisAppear(){
 }
 
 function MakeChoice(choice){
-    
+    if (choice == "rock"){
+        ChooseRock()
+    }
+    else if (choice == "paper"){
+        ChoosePaper()
+    }
+    else if (choice == ""){
+        ChooseScissors()
+    }
+    else {
+        console.log('Erreur !!!')
+    }
 }
 
 onclick

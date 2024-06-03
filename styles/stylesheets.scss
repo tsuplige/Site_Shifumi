@@ -76,6 +76,53 @@ header {
 }
 
 main {
+    width: 40%;
+
+    display: flex;
+    justify-content: space-around;
+
+    .button_border {
+        width: 150px;
+        height: 150px;
+
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: 500ms;
+
+        cursor: pointer;
+    }
+
+    .paper_button_border {
+        background: linear-gradient($paper-gradient);
+        box-shadow: 0 7px 0 hsl(229.02, 65.11%, 46.08%);
+    }
+    .rock_button_border {
+        background: linear-gradient($rock-gradient);
+        box-shadow: 0 7px 0 hsl(349, 50%, 27%);
+        
+    }
+    .scissors_button_border {
+        background: linear-gradient($scissors-gradient);
+        box-shadow: 0 7px 0 hsl(47, 57%, 25%);
+    }
+    .play_button {
+        width: 120px;
+        height: 120px;
+
+        box-shadow: inset -5px 5px 0px 5px rgba(0, 0, 0, 0.262);
+        border-radius: 100px;
+        border: none;
+
+        transition: 500ms;
+        
+        cursor: pointer;
+    }
+}
+
+.choice {
 
     background-image: url("/images/bg-triangle.svg");
     background-repeat: no-repeat;
@@ -84,7 +131,7 @@ main {
     width: 500px;
     height: 400px;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -96,18 +143,6 @@ main {
         flex-direction: row;
         justify-content: space-around;
     }
-    .button_border {
-        width: 150px;
-        height: 150px;
-
-        border-radius: 100px;
-        box-shadow: inset 10px -10px 0px 5px rgba(0, 0, 0, 0.385);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        cursor: pointer;
-    }
 
     .button_border:hover {
         width: 160px;
@@ -118,26 +153,29 @@ main {
             height: 125px;
         }
     }
+}
 
-    .paper_button_border {
-        background: linear-gradient($paper-gradient);
-    }
-    .rock_button_border {
-        background: linear-gradient($rock-gradient);
-    }
-    .scissors_button_border {
-        background: linear-gradient($scissors-gradient);
-    }
-    .play_button {
-        width: 120px;
-        height: 120px;
+.duel {
 
-        box-shadow: inset -10px 10px 0px 5px rgba(0, 0, 0, 0.262);
+    .choice_container {
+        height: 200px;
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .empty {
+        height: 130px;
+        width: 130px;
+
         border-radius: 100px;
-        border: none;
-        
-        cursor: pointer;
+
+        background-color: rgba(0, 0, 0, 0.204);
     }
+
 }
 
 .modal_container {

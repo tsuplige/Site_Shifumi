@@ -45,7 +45,7 @@
         <p class="score_result">0</p>
       </div>
     </header>
-    <main>
+    <main class="choice">
       <div class="row1">
         <div onclick="MakeChoice('paper')" class="paper_button_border button_border">
           <button class="play_button ">
@@ -75,6 +75,31 @@
           />
         </button>
       </div>
+    </main>
+    <main class="duel">
+      <div class="choice_container">
+        <h2>YOU PICKED</h2>
+        <div id="player">
+          <div class="rock_button_border button_border">
+            <button class="play_button">
+              <img
+                src="/images/icon-rock.svg"
+                alt="bouton pierre"
+                class="play_button_img"
+              />
+            </button>
+          </div>
+        </div>
+       
+      </div>
+      <div class="choice_container">
+        <h2>THE HOUSE PICKED</h2>
+        <div id="bot">
+          <div class=" empty">
+          
+          </div>
+        </div>
+     
     </main>
     <div class="modal_container" id="modal">
       <div class="modal">

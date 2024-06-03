@@ -50,57 +50,82 @@ header .score p {
 }
 
 main {
-  background-image: url("/images/bg-triangle.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 500px;
-  height: 400px;
+  width: 40%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-main .row1 {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 main .button_border {
   width: 150px;
   height: 150px;
   border-radius: 100px;
-  box-shadow: inset 10px -10px 0px 5px rgba(0, 0, 0, 0.385);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 500ms;
   cursor: pointer;
-}
-main .button_border:hover {
-  width: 160px;
-  height: 160px;
-}
-main .button_border:hover .play_button {
-  width: 125px;
-  height: 125px;
 }
 main .paper_button_border {
   background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  box-shadow: 0 7px 0 hsl(229.02, 65.11%, 46.08%);
 }
 main .rock_button_border {
   background: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  box-shadow: 0 7px 0 hsl(349, 50%, 27%);
 }
 main .scissors_button_border {
   background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  box-shadow: 0 7px 0 hsl(47, 57%, 25%);
 }
 main .play_button {
   width: 120px;
   height: 120px;
-  box-shadow: inset -10px 10px 0px 5px rgba(0, 0, 0, 0.262);
+  box-shadow: inset -5px 5px 0px 5px rgba(0, 0, 0, 0.262);
   border-radius: 100px;
   border: none;
+  transition: 500ms;
   cursor: pointer;
+}
+
+.choice {
+  background-image: url("/images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 500px;
+  height: 400px;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.choice .row1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.choice .button_border:hover {
+  width: 160px;
+  height: 160px;
+}
+.choice .button_border:hover .play_button {
+  width: 125px;
+  height: 125px;
+}
+
+.duel .choice_container {
+  height: 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.duel .empty {
+  height: 130px;
+  width: 130px;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.204);
 }
 
 .modal_container {
