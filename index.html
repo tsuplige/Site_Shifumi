@@ -47,7 +47,7 @@
     </header>
     <main id="choice" class="choice">
       <div class="row1">
-        <div onclick="MakeChoice('paper')" class="paper_button_border button_border">
+        <div onclick="MakeChoice(1)" class="paper_button_border button_border">
           <button class="play_button ">
             <img
               src="/images/icon-paper.svg"
@@ -56,7 +56,7 @@
             />
           </button>
         </div>
-        <div onclick="MakeChoice('scissors')" class="scissors_button_border button_border">
+        <div onclick="MakeChoice(2)" class="scissors_button_border button_border">
           <button class="play_button ">
             <img
               src="/images/icon-scissors.svg"
@@ -66,7 +66,7 @@
           </button>
         </div>
       </div>
-      <div onclick='MakeChoice(1)' class="rock_button_border button_border">
+      <div onclick='MakeChoice(0)' class="rock_button_border button_border">
         <button class="play_button">
           <img
             src="/images/icon-rock.svg"
@@ -88,7 +88,7 @@
       <div class="choice_container">
         <h2>THE HOUSE PICKED</h2>
         <div id="bot">
-          <div class=" empty">
+          <div class="empty" id="bot_empty">
           
           </div>
         </div>
