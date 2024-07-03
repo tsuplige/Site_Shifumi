@@ -4,7 +4,7 @@ game_choice = [
     'html':`<div class="rock_button_border button_border">
             <button class="play_button">
               <img
-                src="/images/icon-rock.svg"
+                src="./images/icon-rock.svg"
                 alt="bouton pierre"
                 class="play_button_img"
               />
@@ -16,7 +16,7 @@ game_choice = [
     'html':`<div class="paper_button_border button_border">
             <button class="play_button">
               <img
-                src="/images/icon-paper.svg"
+                src="./images/icon-paper.svg"
                 alt="bouton pierre"
                 class="play_button_img"
               />
@@ -28,7 +28,7 @@ game_choice = [
     'html':`<div class="scissors_button_border button_border">
             <button class="play_button">
               <img
-                src="/images/icon-scissors.svg"
+                src="./images/icon-scissors.svg"
                 alt="bouton pierre"
                 class="play_button_img"
               />
